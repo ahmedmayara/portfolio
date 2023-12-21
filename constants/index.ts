@@ -1,0 +1,131 @@
+import { RiSparkling2Line, RiTwitterXFill } from "@remixicon/react";
+import { GridItem } from "@/types";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
+
+export const gridItems: GridItem[] = [
+  {
+    layout: "2x2",
+    type: "SOCIAL",
+    title: "Github",
+    username: "@ahmedmayara",
+    description:
+      "My name is Ahmed Mayara and I’m a junior software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
+    icon: GitHubLogoIcon,
+    buttonText: "Follow",
+    buttonVariant: "gray",
+    buttonLink: "https://github.com/ahmedmayara",
+    url: "https://github.com/ahmedmayara",
+  },
+  {
+    layout: "1x2",
+    type: "SOCIAL",
+    title: "Linkedin",
+    icon: LinkedInLogoIcon,
+    username: "@ahmedmayara",
+    buttonText: "Connect",
+    buttonVariant: "blue",
+    buttonLink: "https://www.linkedin.com/in/ahmed-mayara-1393882a0/",
+    url: "https://www.linkedin.com/in/ahmed-mayara-1393882a0/",
+  },
+  {
+    layout: "1x2",
+    type: "SOCIAL",
+    title: "Instagram",
+    username: "@ahmedmayara",
+    icon: InstagramLogoIcon,
+    buttonText: "Follow",
+    buttonVariant: "pink",
+    buttonLink: "https://www.instagram.com/ahmeedmayara/",
+    url: "https://www.instagram.com/ahmeedmayara/",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
+    title: "Residia",
+    description:
+      "Residia is a powerful and intuitive application designed to help you discover the perfect home for your needs.",
+    techStack: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "MongoDB",
+      "Prisma",
+    ],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/residia-cover.png",
+    buttonLink: "https://github.com/ahmedmayara/residia-app",
+    demoLink: "https://residia.vercel.app/",
+  },
+  {
+    layout: "2x2",
+    type: "SOCIAL",
+    title: "X",
+    description:
+      "My name is Ahmed Mayara and I basically build stuff for the web.",
+    username: "@ahmeedmayara",
+    icon: RiTwitterXFill,
+    buttonText: "Follow",
+    buttonLink: "https://x.com/ahmeedmayara",
+    url: "https://x.com/ahmeedmayara",
+  },
+  {
+    layout: "2x2",
+    type: "EXPERIENCE",
+    title: "Software Developer Intern",
+    icon: RiSparkling2Line,
+    description: "Neopolis Development",
+    location: "Nabeul, Tunisia",
+    startDate: "January 2021",
+    endDate: "March 2021",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
+    title: "Shadcn Vue",
+    description:
+      "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
+    techStack: ["Vue", "Tailwind CSS", "TypeScript", "Vite", "VitePress"],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/shadcn-vue-cover.png",
+    buttonLink: "https://github.com/radix-vue/shadcn-vue",
+    demoLink: "https://www.shadcn-vue.com/",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
+    title: "Bubbles",
+    description:
+      "Bubbles is a dating app that allows you to meet new people and make new friends. It's a fun and easy way to connect with people around you.",
+    techStack: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "MongoDB",
+      "Prisma",
+    ],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/bubbles-cover.png",
+    buttonLink: "https://github.com/ahmedmayara/bubbles-dating",
+    demoLink: "https://bubbles-dating.vercel.app/",
+  },
+] as const;
+
+export const config = {
+  name: "Ahmed Mayara",
+  title: "Junior Software Developer",
+  description: "Building scalable software solutions for the web.",
+  bio: "My name is Ahmed Mayara and I’m a junior software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
+  location: "Nabeul, Tunisia",
+  locationUrl: "https://www.google.com/maps/place/Nabeul/",
+  email: "ahmedmayara789@gmail.com",
+  items: gridItems,
+} as const;
