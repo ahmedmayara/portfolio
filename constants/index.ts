@@ -87,6 +87,27 @@ export const gridItems: GridItem[] = [
   {
     layout: "2x4",
     type: "PROJECT",
+    title: "Oladoc",
+    description:
+      "Oladoc is a platform that connects patients with doctors and helps them book appointments online.",
+    techStack: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "MongoDB",
+      "Prisma",
+      "Pusher",
+    ],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/oladoc-cover.png",
+    buttonLink: "https://github.com/ahmedmayara/oladoc",
+    demoLink: "https://oladoc.online/",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
     title: "Shadcn Vue",
     description:
       "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
@@ -97,31 +118,11 @@ export const gridItems: GridItem[] = [
     buttonLink: "https://github.com/radix-vue/shadcn-vue",
     demoLink: "https://www.shadcn-vue.com/",
   },
-  {
-    layout: "2x4",
-    type: "PROJECT",
-    title: "Bubbles",
-    description:
-      "Bubbles is a dating app that allows you to meet new people and make new friends. It's a fun and easy way to connect with people around you.",
-    techStack: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "MongoDB",
-      "Prisma",
-    ],
-    buttonText: "View on Github",
-    buttonVariant: "gray",
-    image: "/images/bubbles-cover.png",
-    buttonLink: "https://github.com/ahmedmayara/bubbles-dating",
-    demoLink: "https://bubbles-dating.vercel.app/",
-  },
 ] as const;
 
 export const config = {
   name: "Ahmed Mayara",
-  title: "Junior Software Developer",
+  title: "Software Developer",
   description: "Building scalable software solutions for the web.",
   bio: "My name is Ahmed Mayara and I’m a junior software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
   location: "Nabeul, Tunisia",
