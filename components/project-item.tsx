@@ -2,6 +2,7 @@ import { GridItem } from "@/types";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 interface ProjectItemProps {
   item: GridItem;
@@ -19,10 +20,22 @@ export function ProjectItem({ item }: ProjectItemProps) {
         priority
       />
       <div className="relative z-20 w-full space-y-2 p-4 md:p-8">
-        <div className="text-xl font-semibold text-white md:text-3xl">
+        <div
+          className={cn(
+            "text-xl font-semibold text-white md:text-3xl",
+            item.title === "Oladoc" && "text-blue-600",
+          )}
+        >
           {item.title}
         </div>
-        <p className="text-white text-opacity-70">{item.description}</p>
+        <p
+          className={cn(
+            "text-white text-opacity-70",
+            item.title === "Oladoc" && "text-black",
+          )}
+        >
+          {item.description}
+        </p>
         <div className="flex flex-wrap items-center gap-2 pt-2">
           {item.techStack?.map((technology, index) => {
             return <Badge key={index}>{technology}</Badge>;
