@@ -13,7 +13,7 @@ export const gridItems: GridItem[] = [
     title: "Github",
     username: "@ahmedmayara",
     description:
-      "My name is Ahmed Mayara and I’m a junior software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
+      "My name is Ahmed Mayara and I’m a software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
     icon: GitHubLogoIcon,
     buttonText: "Follow",
     buttonVariant: "gray",
