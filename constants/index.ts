@@ -124,7 +124,7 @@ export const config = {
   name: "Ahmed Mayara",
   title: "Software Developer",
   description: "Building scalable software solutions for the web.",
-  bio: "My name is Ahmed Mayara and I’m a junior software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
+  bio: "My name is Ahmed Mayara and I’m a software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
   location: "Nabeul, Tunisia",
   locationUrl: "https://www.google.com/maps/place/Nabeul/",
   email: "ahmedmayara789@gmail.com",
