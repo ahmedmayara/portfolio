@@ -1,4 +1,4 @@
-import { RiSparkling2Line, RiTwitterXFill } from "@remixicon/react";
+import { RiMacbookLine, RiTerminalBoxLine } from "@remixicon/react";
 import { GridItem } from "@/types";
 import {
   GitHubLogoIcon,
@@ -64,21 +64,19 @@ export const gridItems: GridItem[] = [
   },
   {
     layout: "2x2",
-    type: "SOCIAL",
-    title: "X",
-    description:
-      "My name is Ahmed Mayara and I basically build stuff for the web.",
-    username: "@ahmeedmayara",
-    icon: RiTwitterXFill,
-    buttonText: "Follow",
-    buttonLink: "https://x.com/ahmeedmayara",
-    url: "https://x.com/ahmeedmayara",
+    type: "EXPERIENCE",
+    title: "Software Engineer",
+    icon: RiTerminalBoxLine,
+    description: "Devoxys",
+    location: "Mégrine, Ben Arous, Tunisia",
+    startDate: "January 2025",
+    endDate: "Present",
   },
   {
     layout: "2x2",
     type: "EXPERIENCE",
     title: "Software Developer Intern",
-    icon: RiSparkling2Line,
+    icon: RiMacbookLine,
     description: "Neopolis Development",
     location: "Nabeul, Tunisia",
     startDate: "January 2021",
@@ -122,9 +120,9 @@ export const gridItems: GridItem[] = [
 
 export const config = {
   name: "Ahmed Mayara",
-  title: "Software Developer",
+  title: "Software Engineer",
   description: "Building scalable software solutions for the web.",
-  bio: "My name is Ahmed Mayara and I’m a software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
+  bio: "My name is Ahmed Mayara and I’m a software engineer. My main focus is building high-quality, scalable software solutions that meet and exceed client expectations.",
   location: "Nabeul, Tunisia",
   locationUrl: "https://www.google.com/maps/place/Nabeul/",
   email: "ahmedmayara789@gmail.com",

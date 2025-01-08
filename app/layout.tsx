@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/providers/theme-provider";
 import { config } from "@/constants";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Ahmed Mayara",
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={GeistSans.className}>
+      <body className={cn("antialiased", GeistSans.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

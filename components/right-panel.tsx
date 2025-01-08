@@ -9,7 +9,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { GridItem } from "@/components/grid-item";
 import { ProjectItem } from "@/components/project-item";
 import { SocialItem } from "@/components/social-item";
-import ExperienceItem from "./experience-item";
+import { ExperienceItem } from "@/components/experience-item";
 
 export function RightPanel() {
   const [scope, animate] = useAnimate();
@@ -34,7 +34,7 @@ export function RightPanel() {
         },
       );
     }
-  }, [scope]);
+  }, [animate, scope, staggerGridItems]);
 
   return (
     <ScrollArea className="h-screen flex-1 p-0 xl:p-6">

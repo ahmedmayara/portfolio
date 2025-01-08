@@ -5,7 +5,7 @@ interface ExperienceItemProps {
   item: GridItem;
 }
 
-export default function ExperienceItem({ item }: ExperienceItemProps) {
+export function ExperienceItem({ item }: ExperienceItemProps) {
   return (
     <div className="flex flex-col">
       {item.icon ? <item.icon className="h-8 w-8" /> : null}

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Separator } from "@/components/ui/separator";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { format, getYear, startOfToday } from "date-fns";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
 
       <div className="mt-2 flex items-center justify-between">
         <p className="text-xs font-light text-muted-foreground">
-          Built by Ahmed Mayara | &copy; {new Date().getFullYear()}. All rights
+          Built by Ahmed Mayara | &copy; {getYear(startOfToday())}. All rights
           reserved.
         </p>
 
