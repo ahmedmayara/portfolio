@@ -69,7 +69,7 @@ export const gridItems: GridItem[] = [
     icon: RiTerminalBoxLine,
     description: "Devoxys",
     location: "Mégrine, Ben Arous, Tunisia",
-    startDate: "January 2025",
+    startDate: "September 2025",
     endDate: "Present",
   },
   {
