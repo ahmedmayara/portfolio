@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import { DesktopIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -14,6 +13,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { Skeleton } from "@/components/ui/skeleton";
+import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
 
 export function ThemeSwitcher() {
   const [isMounted, setIsMounted] = React.useState(false);
@@ -29,20 +29,35 @@ export function ThemeSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          {theme === "dark" && <MoonIcon className="h-4 w-4" />}
-          {theme === "light" && <SunIcon className="h-4 w-4" />}
-          {theme === "system" && <DesktopIcon className="h-4 w-4" />}
+          {theme === "dark" && (
+            <MoonIcon size={16} strokeWidth={2} aria-hidden="true" />
+          )}
+          {theme === "light" && (
+            <SunIcon size={16} strokeWidth={2} aria-hidden="true" />
+          )}
+          {theme === "system" && (
+            <MonitorIcon size={16} strokeWidth={2} aria-hidden="true" />
+          )}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuGroup>
-          <DropdownMenuItem onClick={() => setTheme("light")}>
+          <DropdownMenuItem
+            onClick={() => setTheme("light")}
+            className="text-xs"
+          >
             Light
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <DropdownMenuItem
+            onClick={() => setTheme("dark")}
+            className="text-xs"
+          >
             Dark
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("system")}>
+          <DropdownMenuItem
+            onClick={() => setTheme("system")}
+            className="text-xs"
+          >
             System
           </DropdownMenuItem>
         </DropdownMenuGroup>

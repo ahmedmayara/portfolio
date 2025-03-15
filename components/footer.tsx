@@ -10,7 +10,7 @@ export function Footer() {
       <Separator className="mt-4" />
 
       <div className="mt-2 flex items-center justify-between">
-        <p className="text-xs font-light text-muted-foreground">
+        <p className="text-muted-foreground text-xs font-light">
           Built by Ahmed Mayara | &copy; {getYear(startOfToday())}. All rights
           reserved.
         </p>

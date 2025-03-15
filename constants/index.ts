@@ -1,10 +1,11 @@
-import { RiMacbookLine, RiTerminalBoxLine } from "@remixicon/react";
-import { GridItem } from "@/types";
 import {
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
+  RiGithubFill,
+  RiInstagramLine,
+  RiLinkedinBoxFill,
+  RiMacbookLine,
+  RiTerminalBoxLine,
+} from "@remixicon/react";
+import { GridItem } from "@/types";
 
 export const gridItems: GridItem[] = [
   {
@@ -14,7 +15,7 @@ export const gridItems: GridItem[] = [
     username: "@ahmedmayara",
     description:
       "My name is Ahmed Mayara and I’m a software developer. My main focus is high-quality, scalable software solutions that meet and exceed client expectations.",
-    icon: GitHubLogoIcon,
+    icon: RiGithubFill,
     buttonText: "Follow",
     buttonVariant: "gray",
     buttonLink: "https://github.com/ahmedmayara",
@@ -24,7 +25,7 @@ export const gridItems: GridItem[] = [
     layout: "1x2",
     type: "SOCIAL",
     title: "Linkedin",
-    icon: LinkedInLogoIcon,
+    icon: RiLinkedinBoxFill,
     username: "@ahmedmayara",
     buttonText: "Connect",
     buttonVariant: "blue",
@@ -36,7 +37,7 @@ export const gridItems: GridItem[] = [
     type: "SOCIAL",
     title: "Instagram",
     username: "@ahmedmayara",
-    icon: InstagramLogoIcon,
+    icon: RiInstagramLine,
     buttonText: "Follow",
     buttonVariant: "pink",
     buttonLink: "https://www.instagram.com/ahmeedmayara/",
