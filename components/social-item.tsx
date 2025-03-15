@@ -12,7 +12,7 @@ export function SocialItem({ item }: SocialItemProps) {
     <Link href={item.url ?? "#"} target="_blank" rel="noopener noreferrer">
       <div className="flex items-center justify-between">
         {item.icon && (
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <item.icon className="h-8 w-8" />
           </div>
         )}
@@ -25,9 +25,9 @@ export function SocialItem({ item }: SocialItemProps) {
 
       <div className="mt-2">
         <div className="line-clamp-1 text-lg font-semibold">{item.title}</div>
-        <div className="text-sm text-muted-foreground">{item.username}</div>
+        <div className="text-muted-foreground text-sm">{item.username}</div>
         {item.description && (
-          <div className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+          <div className="text-muted-foreground mt-1 line-clamp-2 text-sm">
             {item.description}
           </div>
         )}

@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { stagger, useAnimate } from "framer-motion";
+import { stagger, useAnimate } from "motion/react";
 
 import { config } from "@/constants";
 import { ScrollArea } from "@/components/ui/scroll-area";

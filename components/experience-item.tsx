@@ -12,11 +12,11 @@ export function ExperienceItem({ item }: ExperienceItemProps) {
       <h1 className="w-full pt-2 text-lg font-semibold md:text-xl">
         {item.title}
       </h1>
-      <p className="text-md w-full text-muted-foreground md:text-lg">
+      <p className="text-md text-muted-foreground w-full md:text-lg">
         {item.description}
       </p>
 
-      <span className="text-md w-full pt-2 text-muted-foreground">
+      <span className="text-md text-muted-foreground w-full pt-2">
         {item.startDate} - {item.endDate}
       </span>
     </div>
