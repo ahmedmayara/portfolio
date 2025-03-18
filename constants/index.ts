@@ -29,8 +29,8 @@ export const gridItems: GridItem[] = [
     username: "@ahmedmayara",
     buttonText: "Connect",
     buttonVariant: "blue",
-    buttonLink: "https://www.linkedin.com/in/ahmed-mayara-1393882a0/",
-    url: "https://www.linkedin.com/in/ahmed-mayara-1393882a0/",
+    buttonLink: "https://www.linkedin.com/in/ahmed-mayara-1393882a0",
+    url: "https://www.linkedin.com/in/ahmed-mayara-1393882a0",
   },
   {
     layout: "1x2",
@@ -40,8 +40,8 @@ export const gridItems: GridItem[] = [
     icon: RiInstagramLine,
     buttonText: "Follow",
     buttonVariant: "pink",
-    buttonLink: "https://www.instagram.com/ahmeedmayara/",
-    url: "https://www.instagram.com/ahmeedmayara/",
+    buttonLink: "https://www.instagram.com/ahmeedmayara",
+    url: "https://www.instagram.com/ahmeedmayara",
   },
   {
     layout: "2x4",
@@ -61,7 +61,7 @@ export const gridItems: GridItem[] = [
     buttonVariant: "gray",
     image: "/images/residia-cover.png",
     buttonLink: "https://github.com/ahmedmayara/residia-app",
-    demoLink: "https://residia.vercel.app/",
+    demoLink: "https://residia.vercel.app",
   },
   {
     layout: "2x2",
@@ -86,6 +86,31 @@ export const gridItems: GridItem[] = [
   {
     layout: "2x4",
     type: "PROJECT",
+    title: "Devoxys",
+    description:
+      "Devoxys is a software development company that specializes in creating custom software solutions for businesses and organizations.",
+    techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/devoxys-cover.png",
+    demoLink: "https://www.devoxys.com",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
+    title: "Shadcn Vue",
+    description:
+      "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
+    techStack: ["Vue", "Tailwind CSS", "TypeScript", "Vite", "VitePress"],
+    buttonText: "View on Github",
+    buttonVariant: "gray",
+    image: "/images/shadcn-vue-cover.png",
+    buttonLink: "https://github.com/radix-vue/shadcn-vue",
+    demoLink: "https://www.shadcn-vue.com",
+  },
+  {
+    layout: "2x4",
+    type: "PROJECT",
     title: "Oladoc",
     description:
       "Oladoc is a platform that connects patients with doctors and helps them book appointments online.",
@@ -101,21 +126,7 @@ export const gridItems: GridItem[] = [
     buttonText: "View on Github",
     buttonVariant: "gray",
     image: "/images/oladoc-cover.png",
-    buttonLink: "https://github.com/ahmedmayara/oladoc",
-    demoLink: "https://oladoc.online/",
-  },
-  {
-    layout: "2x4",
-    type: "PROJECT",
-    title: "Shadcn Vue",
-    description:
-      "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
-    techStack: ["Vue", "Tailwind CSS", "TypeScript", "Vite", "VitePress"],
-    buttonText: "View on Github",
-    buttonVariant: "gray",
-    image: "/images/shadcn-vue-cover.png",
-    buttonLink: "https://github.com/radix-vue/shadcn-vue",
-    demoLink: "https://www.shadcn-vue.com/",
+    demoLink: "https://oladoc.online",
   },
 ] as const;
 

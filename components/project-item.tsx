@@ -18,13 +18,16 @@ export function ProjectItem({ item }: ProjectItemProps) {
             item.title === "Residia",
           "bg-linear-to-tr from-[#9be15d] to-[#00e3ae]":
             item.title === "Shadcn Vue",
+          "bg-linear-to-r from-zinc-500 to-zinc-700": item.title === "Devoxys",
         })}
       />
       <div className="relative z-20 w-full space-y-2 p-4 md:p-8">
         <div
           className={cn(
             "text-xl font-semibold md:text-3xl",
-            (item.title === "Oladoc" || item.title === "Residia") &&
+            (item.title === "Oladoc" ||
+              item.title === "Residia" ||
+              item.title === "Devoxys") &&
               "text-white",
             item.title === "Shadcn Vue" && "text-zinc-900",
           )}
@@ -49,7 +52,9 @@ export function ProjectItem({ item }: ProjectItemProps) {
                     ? "blueLighter"
                     : item.title === "Oladoc"
                       ? "blueLight"
-                      : "greenLight"
+                      : item.title === "Devoxys"
+                        ? "secondary"
+                        : "greenLight"
                 }
               >
                 {technology}
@@ -67,15 +72,17 @@ export function ProjectItem({ item }: ProjectItemProps) {
               Live Demo
             </a>
           </Button>
-          <Button size="sm" variant="blue" asChild>
-            <a
-              href={item.buttonLink ?? "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source Code
-            </a>
-          </Button>
+          {item.buttonLink && (
+            <Button size="sm" variant="blue" asChild>
+              <a
+                href={item.buttonLink ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </div>
