@@ -1,6 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Education() {
   return (
@@ -19,14 +20,16 @@ export function Education() {
           rel="noopener noreferrer"
         >
           <div className="group hover:bg-accent relative flex cursor-pointer flex-col rounded border border-dashed p-2.5 transition-colors duration-200 ease-in-out">
-            <img
+            <Image
               className="mb-3 size-10 shrink-0"
               src="/images/iset-logo.png"
+              width={40}
+              height={40}
               alt="ISETN logo"
             />
             <h3 className="text-muted-foreground mb-1 text-xs">2021 - 2024</h3>
             <p className="text-sm font-medium tracking-tight">
-              Bachelor's Degree in Computer Technology
+              Bachelor&apos;s Degree in Computer Technology
             </p>
             <p className="text-muted-foreground mt-1 text-sm">
               Higher Institute of Technological Studies of Nabeul (ISETN)
@@ -35,9 +38,11 @@ export function Education() {
         </Link>
 
         <div className="group hover:bg-accent relative flex cursor-pointer flex-col rounded border border-dashed p-2.5 transition-colors duration-200 ease-in-out">
-          <img
+          <Image
             className="mb-3 size-10 shrink-0"
             src="/images/ldcf-logo.png"
+            width={40}
+            height={40}
             alt="ISETN logo"
           />
           <h3 className="text-muted-foreground mb-1 text-xs">2017 - 2021</h3>

@@ -2,6 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import { config } from "@/constants";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -23,9 +24,11 @@ export function Projects() {
           >
             <div className="group hover:bg-accent relative flex cursor-pointer flex-col rounded border border-dashed p-2.5 transition-colors duration-200 ease-in-out">
               <div className="z-10 h-44 min-h-44 overflow-hidden rounded-sm">
-                <img
+                <Image
                   src={project.image}
                   alt={project.alt}
+                  width={400}
+                  height={200}
                   className="h-full object-cover object-top"
                 />
               </div>
