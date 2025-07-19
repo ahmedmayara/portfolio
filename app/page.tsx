@@ -1,18 +1,24 @@
 import { Container } from "@/components/container";
+import { Education } from "@/components/education";
 import { Footer } from "@/components/footer";
-import { LeftPanel } from "@/components/left-panel";
-import { RightPanel } from "@/components/right-panel";
+import { Header } from "@/components/header";
+import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
+import { Socials } from "@/components/socials";
+import { Work } from "@/components/work";
 
 export default function Home() {
   return (
     <Container>
-      <main className="flex h-full w-full flex-col gap-6 px-6 xl:grid xl:grid-cols-[24rem_1fr] xl:gap-10">
-        <LeftPanel />
-        <RightPanel />
-        <div className="block pb-6 xl:hidden">
-          <Footer />
-        </div>
-      </main>
+      <div className="flex flex-col gap-10">
+        <Header />
+        <Socials />
+        <Work />
+        <Projects />
+        <Education />
+        <Skills />
+        <Footer />
+      </div>
     </Container>
   );
 }
