@@ -104,12 +104,28 @@ export const config: {
         "Discover Devoxys: Your Strategic Partner in AI, Automation, and Logistics Optimization",
     },
     {
-      name: "Sheapit International",
+      name: "Shadcn Vue",
+      href: "https://www.shadcn-vue.com",
+      image: "/images/shadcn-vue.png",
+      alt: "Shadcn Vue website screenshot",
+      description:
+        "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
+    },
+    {
+      name: "SheapIt International",
       href: "https://sheap-it.vercel.app",
       image: "/images/sheapit-international.png",
       alt: "Sheapit International website screenshot",
       description:
         "Sheapit is a flagship solution, a revolutionary freight exchange platform connecting shippers and carriers with unmatched efficiency.",
+    },
+    {
+      name: "SheapIt Tunisia",
+      href: "https://sheapit-local.vercel.app",
+      image: "/images/sheapit-tunisia.png",
+      alt: "Sheapit Tunisia website screenshot",
+      description:
+        "The local version of Sheapit, a freight exchange platform tailored for Tunisia, connecting shippers and carriers with unmatched efficiency.",
     },
     {
       name: "Oladoc",
@@ -118,14 +134,6 @@ export const config: {
       alt: "Oladoc website screenshot",
       description:
         "Oladoc is a platform that connects patients with doctors and helps them book appointments online.",
-    },
-    {
-      name: "Shadcn Vue",
-      href: "https://www.shadcn-vue.com",
-      image: "/images/shadcn-vue.png",
-      alt: "Shadcn Vue website screenshot",
-      description:
-        "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
     },
   ],
   skills: [
