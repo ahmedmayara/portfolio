@@ -42,7 +42,7 @@ export const config: {
   socials: {
     github: "https://github.com/ahmedmayara",
     linkedin: "https://www.linkedin.com/in/ahmed-mayara-1393882a0",
-    resume: "https://ahmedmayara.vercel.app/resume.pdf",
+    resume: "https://ahmedmayara.netlify.app/resume.pdf",
   },
   work: [
     {
@@ -83,7 +83,7 @@ export const config: {
       role: "Software Engineer",
       type: "Freelance",
       period: "2023 – Present",
-      companyUrl: "https://ahmedmayara.vercel.app",
+      companyUrl: "https://ahmedmayara.netlify.app",
       logo: "/images/logo.png",
       highlights: [
         "Delivered end-to-end software engineering solutions for startups and founders across diverse domains including fitness, logistics, and e-commerce.",
