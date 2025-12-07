@@ -3,7 +3,6 @@ import { Geist, Doto, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProvider } from "@/providers/theme-provider";
-import { Analytics } from "@vercel/analytics/react";
 import { config } from "@/constants";
 import { cn } from "@/lib/utils";
 import { BottomNavigation } from "@/components/bottom-navigation";
@@ -46,7 +45,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <BottomNavigation />
-          <Analytics />
         </ThemeProvider>
       </body>
     </html>
