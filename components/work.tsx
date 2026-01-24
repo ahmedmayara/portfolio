@@ -44,7 +44,7 @@ export function Work() {
                   </div>
                 </div>
               </Link>
-              <div className="mt-2 -mr-1.5 flex h-px w-full flex-row gap-2 bg-gradient-to-r from-transparent via-transparent to-neutral-300 dark:to-neutral-700" />
+              <div className="mt-2 -mr-1.5 flex h-px w-full flex-row gap-2 bg-linear-to-r from-transparent via-transparent to-neutral-300 dark:to-neutral-700" />
               <div className="flex min-w-24 flex-col justify-between text-xs whitespace-nowrap">
                 <div>{work.period}</div>
                 <div className="text-muted-foreground">{work.location}</div>
@@ -54,9 +54,9 @@ export function Work() {
               {work.highlights.map((highlight, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-row items-start gap-2 sm:ml-[30px]"
+                  className="flex flex-row items-start gap-2 sm:ml-7.5"
                 >
-                  <div className="mt-[7px] size-1.5 shrink-0 rounded-full bg-zinc-300" />
+                  <div className="mt-1.75 size-1.5 shrink-0 rounded-full bg-zinc-300" />
                   <div className="inline-block space-x-1.5 text-[13px] font-light sm:pr-20">
                     <span className="text-muted-foreground">{highlight}</span>
                   </div>

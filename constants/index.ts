@@ -41,16 +41,31 @@ export const config: {
   email: "ahmedmayara789@gmail.com",
   socials: {
     github: "https://github.com/ahmedmayara",
-    linkedin: "https://www.linkedin.com/in/ahmed-mayara-1393882a0",
+    linkedin: "https://www.linkedin.com/in/ahmed-mayara",
     resume: "https://ahmedmayara.netlify.app/resume.pdf",
   },
   work: [
+    {
+      company: "Aethra",
+      location: "Remote",
+      role: "Frontend Engineer",
+      type: "Full-time",
+      period: "Jan 2026 - Present",
+      companyUrl: "https://app.aethraworker.com",
+      logo: "/images/aethra-logo.png",
+      highlights: [
+        "Joining Aethra as a Frontend Engineer to spearhead the development of their workforce management platform using technologies like Vue.js, TypeScript, and Tailwind CSS.",
+        "Collaborating closely with cross-functional teams to design and implement user-centric features that enhance operational efficiency and user experience for businesses managing their workforce.",
+        "Driving the adoption of best practices in frontend development, ensuring code quality, performance optimization, and scalability of the platform to meet growing user demands.",
+        "Engaging in continuous learning and staying abreast of the latest industry trends to incorporate modern solutions that keep Aethra at the forefront of workforce management technology.",
+      ],
+    },
     {
       company: "Devoxys",
       location: "Ben Arous, Tunisia",
       role: "Software Engineer",
       type: "Full-time",
-      period: "Sep 2024 - Present",
+      period: "Sep 2024 - Dec 2025",
       companyUrl: "https://devoxys.com",
       logo: "https://avatars.githubusercontent.com/u/196986389?s=200&v=4",
       highlights: [
@@ -198,6 +213,7 @@ export const config: {
         {
           name: "Express.js",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          darkIcon: "https://img.icons8.com/ios/100/FFFFFF/express-js.png",
         },
         {
           name: "React Native",
@@ -205,7 +221,8 @@ export const config: {
         },
         {
           name: "Expo",
-          icon: "https://www.svgrepo.com/show/341805/expo.svg",
+          icon: "https://img.icons8.com/ios-filled/100/000000/expo.png",
+          darkIcon: "https://img.icons8.com/ios-filled/100/FFFFFF/expo.png",
         },
       ],
     },
@@ -226,10 +243,11 @@ export const config: {
         {
           name: "Prisma ORM",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+          darkIcon: "/images/prisma-dark.png",
         },
         {
           name: "Drizzle ORM",
-          icon: "https://images.opencollective.com/drizzle-orm/9405e48/logo/256.png",
+          icon: "https://easegis.jp/images/blog/drizzle-orm.svg",
         },
       ],
     },
@@ -257,7 +275,9 @@ export const config: {
         },
         {
           name: "Framer",
-          icon: "https://www.svgrepo.com/show/452207/framer.svg",
+          icon: "https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/000000/external-framer-the-only-tool-you-need-to-create-interactive-designs-for-any-platform-logo-bold-tal-revivo.png",
+          darkIcon:
+            "https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/FFFFFF/external-framer-the-only-tool-you-need-to-create-interactive-designs-for-any-platform-logo-bold-tal-revivo.png",
         },
         {
           name: "Vite",
@@ -298,6 +318,8 @@ export const config: {
         {
           name: "GitHub Actions (CI/CD)",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+          darkIcon:
+            "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png",
         },
       ],
     },
@@ -305,7 +327,7 @@ export const config: {
       testing: [
         {
           name: "Vitest",
-          icon: "https://vitest.dev/logo.svg",
+          icon: "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/5/vitest-1c3qaaziljmyt9fer4ybrm.png/vitest-4k5bpolhfo3mhu87zo5kz.png?_a=DATAiZAAZAA0",
         },
       ],
     },

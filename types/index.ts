@@ -1,6 +1,7 @@
 export type Skill = {
   name: string;
   icon: string;
+  darkIcon?: string;
 };
 
 export type SkillCategory = {
