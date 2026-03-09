@@ -1,0 +1,6 @@
+[build]
+  command = "bun run build"
+  publish = ".next"
+
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "GITHUB_USERNAME"
