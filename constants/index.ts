@@ -67,7 +67,7 @@ export const config: {
       type: "Full-time",
       period: "Sep 2024 - Dec 2025",
       companyUrl: "https://devoxys.com",
-      logo: "https://avatars.githubusercontent.com/u/196986389?s=200&v=4",
+      logo: "https://www.devoxys.com/logo.svg",
       highlights: [
         "Created SheapIt, an advanced logistics platform at Devoxys, leveraging React, Next.js.",
         "Operated and implemented core features including team management, shipment tracking, and automated logistics document generation, reducing manual workload by 30% and accelerating document processing time by 40%.",
