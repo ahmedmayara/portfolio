@@ -42,19 +42,19 @@ export const config: {
   socials: {
     github: "https://github.com/ahmedmayara",
     linkedin: "https://www.linkedin.com/in/ahmed-mayara",
-    resume: "https://ahmedmayara.netlify.app/resume.pdf",
+    resume: "https://ahmedmayara.netlify.app/Ahmed-Mayara-Resume.pdf",
   },
   work: [
     {
       company: "Aethra",
       location: "Remote",
-      role: "Frontend Engineer",
+      role: "Lead Frontend Engineer",
       type: "Full-time",
       period: "Jan 2026 - Present",
       companyUrl: "https://app.aethraworker.com",
       logo: "/images/aethra-logo.png",
       highlights: [
-        "Joining Aethra as a Frontend Engineer to spearhead the development of their workforce management platform using technologies like Vue.js, TypeScript, and Tailwind CSS.",
+        "Joining Aethra as a Lead Frontend Engineer to spearhead the development of their workforce management platform using technologies like Vue.js, TypeScript, and Tailwind CSS.",
         "Collaborating closely with cross-functional teams to design and implement user-centric features that enhance operational efficiency and user experience for businesses managing their workforce.",
         "Driving the adoption of best practices in frontend development, ensuring code quality, performance optimization, and scalability of the platform to meet growing user demands.",
         "Engaging in continuous learning and staying abreast of the latest industry trends to incorporate modern solutions that keep Aethra at the forefront of workforce management technology.",
@@ -63,11 +63,11 @@ export const config: {
     {
       company: "Devoxys",
       location: "Ben Arous, Tunisia",
-      role: "Software Engineer",
+      role: "Co-founder & Software Engineer",
       type: "Full-time",
       period: "Sep 2024 - Dec 2025",
       companyUrl: "https://devoxys.com",
-      logo: "https://www.devoxys.com/logo.svg",
+      logo: "/images/devoxys-logo.png",
       highlights: [
         "Created SheapIt, an advanced logistics platform at Devoxys, leveraging React, Next.js.",
         "Operated and implemented core features including team management, shipment tracking, and automated logistics document generation, reducing manual workload by 30% and accelerating document processing time by 40%.",
