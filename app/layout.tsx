@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { config } from "@/constants";
 import { cn } from "@/lib/utils";
 import { BottomNavigation } from "@/components/bottom-navigation";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -43,8 +44,10 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-          <BottomNavigation />
+          <TooltipProvider>
+            {children}
+            <BottomNavigation />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
