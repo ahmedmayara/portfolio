@@ -36,8 +36,8 @@ export function GitHubContributions({
       className={cn("mx-auto py-2", className)}
       data={data}
       blockSize={11}
-      blockMargin={3}
-      blockRadius={2}
+      blockMargin={2}
+      blockRadius={0}
     >
       <ContributionGraphCalendar
         className="no-scrollbar px-2"
@@ -57,7 +57,7 @@ export function GitHubContributions({
             <TooltipContent className="font-sans">
               <p>
                 {activity.count} contribution{activity.count > 1 ? "s" : null}{" "}
-                on {format(new Date(activity.date), "dd.MM.yyyy")}
+                on {format(new Date(activity.date), "MMMM d, yyyy")}
               </p>
             </TooltipContent>
           </Tooltip>
