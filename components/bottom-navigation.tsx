@@ -1,6 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import { drop002Sound } from "@/sounds/drop-002";
 import {
   RemixiconComponentType,
   RiBriefcase5Fill,
@@ -8,9 +11,10 @@ import {
   RiSparklingFill,
   RiSurveyFill,
 } from "@remixicon/react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+
+import { cn } from "@/lib/utils";
+
+import { useSound } from "@/hooks/use-sound";
 
 const routes: { title: string; icon: RemixiconComponentType; href: string }[] =
   [
@@ -38,11 +42,18 @@ const routes: { title: string; icon: RemixiconComponentType; href: string }[] =
 
 export function BottomNavigation() {
   const pathname = usePathname();
+  const [play] = useSound(drop002Sound);
+
   return (
     <div className="ring-border/50 bg-background/20 fixed bottom-4 left-1/2 z-999 mt-7 flex h-fit -translate-x-1/2 flex-col items-center rounded-full p-3 px-6 py-2.5 shadow-xs ring backdrop-blur-lg sm:bottom-8">
       <div className="flex flex-row gap-8">
         {routes.map((route) => (
-          <Link href={route.href} key={route.href} className="relative">
+          <Link
+            href={route.href}
+            onClick={() => play()}
+            key={route.href}
+            className="relative"
+          >
             <div
               className={cn(
                 "flex flex-col items-center justify-center transition-all duration-200",

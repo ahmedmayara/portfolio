@@ -1,8 +1,7 @@
-import React from "react";
-
-import Link from "next/link";
-import { config } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
+
+import { config } from "@/constants";
 
 export function Projects() {
   return (

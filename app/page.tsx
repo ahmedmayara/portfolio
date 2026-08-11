@@ -1,3 +1,7 @@
+import { Suspense } from "react";
+
+import { getCachedContributions } from "@/lib/github";
+
 import { Container } from "@/components/container";
 import { Education } from "@/components/education";
 import { Footer } from "@/components/footer";
@@ -10,8 +14,6 @@ import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { Socials } from "@/components/socials";
 import { Work } from "@/components/work";
-import { getCachedContributions } from "@/lib/github";
-import { Suspense } from "react";
 
 export default function Home() {
   const contributions = getCachedContributions(process.env.GITHUB_USERNAME!);

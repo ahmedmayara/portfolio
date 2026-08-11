@@ -2,12 +2,16 @@
 
 import React from "react";
 
+import { switch001Sound } from "@/sounds/switch-001";
 import { useTheme } from "next-themes";
+
+import { useSound } from "@/hooks/use-sound";
 
 import { Button } from "@/components/ui/button";
 
 export function ThemeSwitcher() {
   const { setTheme, resolvedTheme } = useTheme();
+  const [play] = useSound(switch001Sound);
 
   const toggleTheme = React.useCallback(() => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
@@ -18,7 +22,10 @@ export function ThemeSwitcher() {
       variant="ghost"
       size="icon"
       className="size-7"
-      onClick={toggleTheme}
+      onClick={() => {
+        play();
+        toggleTheme();
+      }}
       title="Toggle theme"
     >
       <svg

@@ -1,5 +1,6 @@
-import type { Activity } from "@/components/contribution-graph";
 import { unstable_cache } from "next/cache";
+
+import type { Activity } from "@/components/contribution-graph";
 
 type GitHubContributionsResponse = {
   contributions: Activity[];

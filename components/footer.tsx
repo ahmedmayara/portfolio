@@ -1,8 +1,6 @@
-import React from "react";
+import { getYear, startOfToday } from "date-fns";
 
 import { Separator } from "@/components/ui/separator";
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { getYear, startOfToday } from "date-fns";
 
 export function Footer() {
   return (

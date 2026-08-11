@@ -1,9 +1,11 @@
 "use client";
 
 import { use } from "react";
+
 import { format } from "date-fns";
 
 import { cn } from "@/lib/utils";
+
 import {
   Tooltip,
   TooltipContent,
@@ -18,7 +20,8 @@ import {
   ContributionGraphLegend,
   ContributionGraphTotalCount,
 } from "@/components/contribution-graph";
-import { Spinner } from "./ui/spinner";
+
+import { Spinner } from "@/components/ui/spinner";
 
 export function GitHubContributions({
   contributions,
