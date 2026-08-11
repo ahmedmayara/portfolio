@@ -45,7 +45,7 @@ export const config: {
     resume:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000/Ahmed_Mayara_Resume.pdf"
-        : "https://ahmedmayara.netlify.app/Ahmed-Mayara-Resume.pdf",
+        : "https://ahmedmayara.netlify.app/Ahmed_Mayara_Resume.pdf",
   },
   work: [
     {
