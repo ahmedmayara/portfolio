@@ -22,7 +22,7 @@ export function Education() {
           <div className="group hover:bg-accent relative flex cursor-pointer flex-col rounded border border-dashed p-2.5 transition-colors duration-200 ease-in-out">
             <Image
               className="mb-3 size-10 shrink-0"
-              src="/images/iset-logo.png"
+              src="/images/iset-logo.svg"
               width={40}
               height={40}
               alt="ISETN logo"
@@ -40,10 +40,10 @@ export function Education() {
         <div className="group hover:bg-accent relative flex cursor-pointer flex-col rounded border border-dashed p-2.5 transition-colors duration-200 ease-in-out">
           <Image
             className="mb-3 size-10 shrink-0"
-            src="/images/ldcf-logo.png"
+            src="/images/ldcf-logo.svg"
             width={40}
             height={40}
-            alt="ISETN logo"
+            alt="LDCF logo"
           />
           <h3 className="text-muted-foreground mb-1 text-xs">2017 - 2021</h3>
           <p className="text-sm font-medium tracking-tight">

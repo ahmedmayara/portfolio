@@ -13,7 +13,9 @@ export function Footer() {
           Built by Ahmed Mayara | &copy; {getYear(startOfToday())}. All rights
           reserved.
         </p>
-        <ThemeSwitcher />
+        <p className="text-muted-foreground text-xs font-light">
+          Tunisia, Nabeul
+        </p>
       </div>
     </div>
   );

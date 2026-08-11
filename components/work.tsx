@@ -35,7 +35,7 @@ export function Work() {
                 <div className="flex flex-col justify-between whitespace-nowrap">
                   <div className="space-x-2 text-sm font-medium">
                     <span>{work.company}</span>
-                    <span className="bg-muted/35 text-muted-foreground/80 rounded-full px-2 py-0.5 text-[10px] select-none">
+                    <span className="bg-muted/35 text-muted-foreground/80 inline-flex shrink-0 items-center justify-center rounded-full px-2 py-0.5 text-[10px] select-none">
                       {work.type}
                     </span>
                   </div>

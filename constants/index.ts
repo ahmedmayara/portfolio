@@ -37,12 +37,15 @@ export const config: {
   description: "Building scalable software solutions for the web.",
   bio: "My name is Ahmed Mayara and I’m a software engineer. My main focus is building high-quality, scalable software solutions that meet and exceed client expectations.",
   location: "Nabeul, Tunisia",
-  locationUrl: "https://www.google.com/maps/place/Nabeul/",
+  locationUrl: "https://www.google.com/maps/place/Nabeul",
   email: "ahmedmayara789@gmail.com",
   socials: {
     github: "https://github.com/ahmedmayara",
     linkedin: "https://www.linkedin.com/in/ahmed-mayara",
-    resume: "https://ahmedmayara.netlify.app/Ahmed-Mayara-Resume.pdf",
+    resume:
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000/Ahmed_Mayara_Resume.pdf"
+        : "https://ahmedmayara.netlify.app/Ahmed-Mayara-Resume.pdf",
   },
   work: [
     {
@@ -111,25 +114,33 @@ export const config: {
   ],
   projects: [
     {
-      name: "Devoxys",
-      href: "https://www.devoxys.com",
-      image: "/images/devoxys.png",
-      alt: "Devoxys website screenshot",
+      name: "Civian",
+      href: "https://civian.netlify.app",
+      image: "/images/civian.svg",
+      alt: "Civian website screenshot",
       description:
-        "Discover Devoxys: Your Strategic Partner in AI, Automation, and Logistics Optimization",
+        "Civian is an AI-powered resume builder with a real-time editor, using React and TypeScript on the frontend and Hono on Node.js for a type-safe API layer.",
     },
     {
-      name: "Shadcn Vue",
+      name: "shadcn/vue",
       href: "https://www.shadcn-vue.com",
-      image: "/images/shadcn-vue.png",
+      image: "/images/shadcn-vue.svg",
       alt: "Shadcn Vue website screenshot",
       description:
         "An unofficial, community-led Vue port of shadcn/ui. This project was born out of the need for a similar project for the Vue ecosystem.",
     },
     {
+      name: "Devoxys",
+      href: "https://www.devoxys.com",
+      image: "/images/devoxys.svg",
+      alt: "Devoxys website screenshot",
+      description:
+        "Discover Devoxys: Your Strategic Partner in AI, Automation, and Logistics Optimization",
+    },
+    {
       name: "SheapIt International",
       href: "https://sheap-it.vercel.app",
-      image: "/images/sheapit-international.png",
+      image: "/images/sheapit-international.svg",
       alt: "Sheapit International website screenshot",
       description:
         "Sheapit is a flagship solution, a revolutionary freight exchange platform connecting shippers and carriers with unmatched efficiency.",
@@ -137,7 +148,7 @@ export const config: {
     {
       name: "SheapIt Tunisia",
       href: "https://sheapit-local.vercel.app",
-      image: "/images/sheapit-tunisia.png",
+      image: "/images/sheapit-international.svg",
       alt: "Sheapit Tunisia website screenshot",
       description:
         "The local version of Sheapit, a freight exchange platform tailored for Tunisia, connecting shippers and carriers with unmatched efficiency.",
@@ -145,7 +156,7 @@ export const config: {
     {
       name: "Oladoc",
       href: "https://oladoc.vercel.app",
-      image: "/images/oladoc.png",
+      image: "/images/oladoc.svg",
       alt: "Oladoc website screenshot",
       description:
         "Oladoc is a platform that connects patients with doctors and helps them book appointments online.",

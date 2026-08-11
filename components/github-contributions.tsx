@@ -18,7 +18,7 @@ import {
   ContributionGraphLegend,
   ContributionGraphTotalCount,
 } from "@/components/contribution-graph";
-import { Loader2 } from "lucide-react";
+import { Spinner } from "./ui/spinner";
 
 export function GitHubContributions({
   contributions,
@@ -91,7 +91,7 @@ export function GitHubContributions({
 export function GitHubContributionsFallback() {
   return (
     <div className="flex h-40.5 w-full items-center justify-center">
-      <Loader2 className="text-muted-foreground size-4" />
+      <Spinner size="sm" />
     </div>
   );
 }
