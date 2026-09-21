@@ -333,6 +333,8 @@ export const config: {
         {
           name: "AWS",
           icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+          darkIcon:
+            "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/aws-light.svg",
         },
         {
           name: "CircleCI",
