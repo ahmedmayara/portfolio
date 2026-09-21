@@ -6,6 +6,8 @@ import React from "react";
 import { config } from "@/constants";
 import { useTheme } from "next-themes";
 
+import { Profile } from "./og/profile";
+
 export function Skills() {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState<boolean>(false);

@@ -11,6 +11,6 @@ export type SkillCategory = {
   librariesAndTools?: Skill[];
   runtimeEnvironments?: Skill[];
   softwares?: Skill[];
-  devops?: Skill[];
+  devopsAndCloud?: Skill[];
   testing?: Skill[];
 };

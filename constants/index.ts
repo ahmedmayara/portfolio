@@ -218,6 +218,10 @@ export const config: {
           icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
         },
         {
+          name: "NestJS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+        },
+        {
           name: "Hono",
           icon: "https://upload.wikimedia.org/wikipedia/commons/6/60/Hono-logo.svg",
         },
@@ -321,10 +325,19 @@ export const config: {
       ],
     },
     {
-      devops: [
+      devopsAndCloud: [
         {
           name: "Docker",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        },
+        {
+          name: "AWS",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        },
+        {
+          name: "CircleCI",
+          icon: "https://thesvg.org/icons/circleci/light.svg",
+          darkIcon: "https://thesvg.org/icons/circleci/dark.svg",
         },
         {
           name: "GitHub Actions (CI/CD)",

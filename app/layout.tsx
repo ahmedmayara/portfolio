@@ -27,8 +27,24 @@ const fontDoto = Doto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://ahmedmayara.netlify.app",
+  ),
   title: "Ahmed Mayara",
   description: config.description,
+  openGraph: {
+    title: "Ahmed Mayara",
+    description: config.description,
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ahmed Mayara",
+    description: config.description,
+  },
 };
 
 export default function RootLayout({
