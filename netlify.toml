@@ -4,3 +4,9 @@
 
 [build.environment]
   SECRETS_SCAN_OMIT_KEYS = "GITHUB_USERNAME"
+
+[[headers]]
+  for = "/og.png"
+  [headers.values]
+    Content-Type = "image/png"
+    Cache-Control = "public, max-age=86400"

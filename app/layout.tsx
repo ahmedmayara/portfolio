@@ -26,24 +26,41 @@ const fontDoto = Doto({
   variable: "--font-doto",
 });
 
+const siteUrl = new URL(
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://ahmedmayara.netlify.app",
+);
+
+const ogImage = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: `${config.name} — ${config.title}`,
+  type: "image/png",
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : "https://ahmedmayara.netlify.app",
-  ),
+  metadataBase: siteUrl,
   title: "Ahmed Mayara",
   description: config.description,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Ahmed Mayara",
     description: config.description,
     type: "website",
     locale: "en_US",
+    url: "/",
+    siteName: "Ahmed Mayara",
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ahmed Mayara",
     description: config.description,
+    images: [ogImage],
   },
 };
 

@@ -7,12 +7,10 @@ import { config } from "@/constants";
 
 import { Profile } from "@/components/og/profile";
 
-export const alt = `${config.name} — ${config.title}`;
-export const size = {
+const size = {
   width: 1200,
   height: 630,
 };
-export const contentType = "image/png";
 
 async function loadGeist(weight: number, text: string) {
   const css = await fetch(
@@ -42,7 +40,7 @@ async function loadGeist(weight: number, text: string) {
   return font.arrayBuffer();
 }
 
-export default async function Image() {
+export async function GET() {
   const text = `${config.name} ${config.title} ${config.description}`;
   const [avatar, geistRegular, geistSemiBold, geistBold] = await Promise.all([
     readFile(join(process.cwd(), "public/images/profile-picture.jpg")),
@@ -62,6 +60,9 @@ export default async function Image() {
     ),
     {
       ...size,
+      headers: {
+        "Cache-Control": "public, max-age=3600, immutable",
+      },
       fonts: [
         {
           name: "Geist",
