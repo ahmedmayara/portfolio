@@ -49,18 +49,19 @@ export const config: {
   },
   work: [
     {
-      company: "Aethra",
+      company: "Upper8",
       location: "Remote",
-      role: "Lead Frontend Engineer",
+      role: "Frontend Engineer",
       type: "Full-time",
       period: "Jan 2026 - Present",
       companyUrl: "https://app.aethraworker.com",
-      logo: "/images/aethra-logo.png",
+      logo: "/images/upper8-logo.svg",
       highlights: [
-        "Joining Aethra as a Lead Frontend Engineer to spearhead the development of their workforce management platform using technologies like Vue.js, TypeScript, and Tailwind CSS.",
-        "Collaborating closely with cross-functional teams to design and implement user-centric features that enhance operational efficiency and user experience for businesses managing their workforce.",
-        "Driving the adoption of best practices in frontend development, ensuring code quality, performance optimization, and scalability of the platform to meet growing user demands.",
-        "Engaging in continuous learning and staying abreast of the latest industry trends to incorporate modern solutions that keep Aethra at the forefront of workforce management technology.",
+        "Joined Upper8 as Frontend Engineer to architect and ship a ground-up design system for its workforce management platform, covering design tokens, Tailwind CSS theming, and a documented, accessible Vue 3 + TypeScript component library that is now the single source of truth for the product UI.",
+        "Designed the design system to be agent-ready, with a consistent component API, typed props, and semantic tokens that both engineers and AI agents can compose reliably, so the platform's agentic features such as scheduling, shift-filling, and workforce insights render with a unified look and behavior.",
+        "Built the frontend foundation for an agentic product experience, including streaming responses, human-in-the-loop approval flows, action confirmations, and transparent agent activity states.",
+        "Partnered with product, design, and backend teams to turn agentic workflows into user-centric interfaces, using the design system to cut duplicated UI work and speed up feature delivery.",
+        "Established frontend standards around component governance, visual regression testing, accessibility, and performance budgets, keeping the platform fast, consistent, and scalable as both the user base and the agent capabilities grow.",
       ],
     },
     {
