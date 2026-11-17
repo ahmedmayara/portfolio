@@ -54,7 +54,7 @@ export const config: {
       role: "Frontend Engineer",
       type: "Full-time",
       period: "Jan 2026 - Present",
-      companyUrl: "https://app.aethraworker.com",
+      companyUrl: "https://app.upper8.io",
       logo: "/images/upper8-logo.svg",
       highlights: [
         "Joined Upper8 as Frontend Engineer to architect and ship a ground-up design system for its workforce management platform, covering design tokens, Tailwind CSS theming, and a documented, accessible Vue 3 + TypeScript component library that is now the single source of truth for the product UI.",
